@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner n=new Scanner(System.in);
+        int a=n.nextInt();
+        int b=n.nextInt();
+        int c=n.nextInt();
+    int v=(a>b)?((a>c)?a:c):((b>c)?b:c);
+    System.out.print(v);// Your code here
+    }
+}
