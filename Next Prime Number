@@ -1,0 +1,24 @@
+public static boolean isprime(int n){
+    if(n<=1)
+    return false;
+    for(int i=2;i<=Math.sqrt(n);i++){//use math.sqrt(n)
+        if(n%i==0)
+        return false;
+    }
+    return true;
+}
+
+public static int nextPrime(int n){
+      while(true){
+      n++;
+      if(isprime(n))
+      return n;
+          
+      }
+        
+    //code here to find next prime number
+    //return next prime number
+    
+   
+    
+}
