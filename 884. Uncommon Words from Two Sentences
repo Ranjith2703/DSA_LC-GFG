@@ -1,0 +1,13 @@
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        f={}
+        w1=s1.split()
+        w2=s2.split()
+        a=w1+w2
+        for i in a:
+            f[i]=f.get(i,0)+1
+        b=[]
+        for j,k in f.items():
+            if(k==1):
+                b.append(j)
+        return b
