@@ -1,0 +1,23 @@
+Given a number x, reverse its binary form and return the answer in decimal.
+
+Example 1:
+
+Input:
+x = 1
+Output:
+2147483648 
+Explanation:
+Binary of 1 in 32 bits representation-
+00000000000000000000000000000001
+Reversing the binary form we get, 
+10000000000000000000000000000000,
+
+
+ def reversedBits(self, x):
+        ans=0;k=31
+        while x:
+            if x&1:
+                ans+=2**k
+            x//=2
+            k-=1
+        return ans
